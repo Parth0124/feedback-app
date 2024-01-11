@@ -19,7 +19,11 @@ const [feedback, setFeedback]=useState(FeedbackData)
 const deleteFeedback =(id)=>{
     if(window.confirm('Are you sure you want to delete?'))
     {
-        setFeedback(feedback.filter((item)=>item.id !== id))
+        // setFeedback(feedback.filter((item) => item.id !== id))
+        const updatedFeedback = feedback.filter((item) => item.id !== id)
+        updatedFeedback.sort((a,b) => a.timestamp-b.timestamp)
+        console.log(updatedFeedback)
+        setFeedback(updatedFeedback)
     }
     
 }
