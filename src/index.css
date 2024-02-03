@@ -190,15 +190,12 @@ input:focus {
     color: rebeccapurple;
 }
 
-/* FIX: Remove position: absolute to keep about icon at the bottom of the
- * document */
-.about-link {
-    display: flex;
-    justify-content: flex-end;
-}
+ .about-link {
+    position: absolute;
+    bottom: 10px; 
+    right: 20px; 
+ }
 
-/* FIX: Remove position: absolute to keep about icon at the bottom of the
- * document */
 .about-link a {
     color: #fff;
     cursor: pointer;

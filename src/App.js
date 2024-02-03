@@ -7,6 +7,7 @@ import FeedbackStats from './components/FeedbackStats'
 import FeedbackForm from './components/FeedbackForm'
 import Header from './components/Header'
 import Aboutpage from './Pages/Aboutpage'
+import Abouticonlink from './components/Abouticonlink'
 
 function App() {
   const addFeedback = (newFeedback) => {
@@ -37,6 +38,7 @@ function App() {
               <FeedbackStats feedback={feedback} />
               <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
             </div>
+            <Abouticonlink />
           </div>
         } />
       </Routes>
